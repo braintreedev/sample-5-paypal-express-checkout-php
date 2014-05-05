@@ -1,7 +1,5 @@
 # Using the PayPal Express Checkout API in PHP to make a PayPal payment
 
-[![Build Status](https://travis-ci.org/commercefactory/001-paypal-rest-sinatra-paypal-payment.svg?branch=master)](https://travis-ci.org/commercefactory/001-paypal-rest-sinatra-paypal-payment)
-
 This is an example of the PayPal Express Checkout API using plain PHP to make a PayPal payment.
 
 ## Technology
