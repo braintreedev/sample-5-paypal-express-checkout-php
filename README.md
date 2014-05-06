@@ -2,7 +2,7 @@
 
 This is an example of the PayPal Express Checkout API using plain PHP to make a PayPal payment.
 
-This code does not use an SDK although it uses a basic wrapper to handle the PHP NVP api.
+This code does not use an SDK although it uses a basic wrapper to handle the NVP API. You can use [this library](includes/paypal.php) as a drop in for your project.
 
 ## Technology
 
@@ -20,3 +20,7 @@ This demo uses
   * Password: `test1234`
 * Complete the payment instructions
 * You will receive a message that says __"Payment completed"__
+
+## Useful link
+
+* [List of methods available on the Merchant API](https://developer.paypal.com/docs/classic/api/#merchant)
