@@ -21,6 +21,6 @@ This demo uses
 * Complete the payment instructions
 * You will receive a message that says __"Payment completed"__
 
-## Related
+## Useful link
 
 * [List of methods available on the Merchant API](https://developer.paypal.com/docs/classic/api/#merchant)
