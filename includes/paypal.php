@@ -45,13 +45,14 @@ class PayPal
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_POSTFIELDS => http_build_query($values),
       CURLOPT_CUSTOMREQUEST => "POST",
-      CURLOPT_TIMEOUT => 3
+      CURLOPT_TIMEOUT => 10
     );
 
 
     curl_setopt_array($curl, $options);
+    $rep = curl_exec($curl);
 
-    parse_str(curl_exec($curl), $response);
+    parse_str($rep, $response);
     curl_close($curl);
 
     return $response;

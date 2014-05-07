@@ -17,5 +17,5 @@ $result = $paypal->call(array(
 if ($result['ACK'] == 'Success') {
   $paypal->redirect($result);
 } else {
-  echo 'Handle the payment creation failure';
+  echo 'Handle the payment creation failure <br>';
 }
