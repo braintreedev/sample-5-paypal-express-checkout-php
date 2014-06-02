@@ -28,7 +28,7 @@ This demo uses
   * [Firefox](http://getfirefox.com) with the [Selenium IDE](http://seleniumhq.org/projects/ide/plugins.html)
   * PHP 5.4
 * Start the app by running `php -S 127.0.0.1:8080`
-* Load the [test script](tests/payment.selenium) in the Selenium IDE and run the script
+* Load the [test script](tests/payment.html) in the Selenium IDE and run the script
 
 ## Useful link
 
