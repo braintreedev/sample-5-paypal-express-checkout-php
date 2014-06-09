@@ -30,7 +30,7 @@ This demo uses
   * [Firefox](http://getfirefox.com) with the [Selenium IDE](http://seleniumhq.org/projects/ide/plugins.html)
   * PHP 5.4
 * Start the app by running `php -S 127.0.0.1:8080`
-* Load the [test script](tests/payment.html) in the Selenium IDE and run the script
+* Load the [test script](tests/payment.html) in the Selenium IDE and run the script. Note if you are running the webserver of your choice you will need to change the base url in the test script to match.
 
 ## Useful link
 
