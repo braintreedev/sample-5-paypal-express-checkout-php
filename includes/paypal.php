@@ -1,17 +1,16 @@
 <?php
 
-class PayPal
-{
+class PayPal {
   private $config;
 
   private $urls = array(
     "sandbox" => array(
-      "api" => "https://api-3t.sandbox.paypal.com/nvp",
-      "redirect" => "https://www.sandbox.paypal.com/webscr"
+      "api"  => "https://api-3t.sandbox.paypal.com/nvp",
+      "redirect"  => "https://www.sandbox.paypal.com/webscr",
     ),
     "live" => array(
-      "api" => "https://api-3t.sandbox.paypal.com/nvp",
-      "redirect" => "https://www.sandbox.paypal.com/webscr"
+      "api"  => "https://api-3t.sandbox.paypal.com/nvp",
+      "redirect"  => "https://www.sandbox.paypal.com/webscr",
     )
   );
 
@@ -41,13 +40,12 @@ class PayPal
     $curl = curl_init($url);
 
     $options = array(
-      CURLOPT_VERBOSE => true,
-      CURLOPT_RETURNTRANSFER => true,
-      CURLOPT_POSTFIELDS => http_build_query($values),
-      CURLOPT_CUSTOMREQUEST => "POST",
-      CURLOPT_TIMEOUT => 10
+      CURLOPT_VERBOSE  => true,
+      CURLOPT_RETURNTRANSFER  => true,
+      CURLOPT_POSTFIELDS  => http_build_query($values),
+      CURLOPT_CUSTOMREQUEST  => "POST",
+      CURLOPT_TIMEOUT  => 10
     );
-
 
     curl_setopt_array($curl, $options);
     $rep = curl_exec($curl);

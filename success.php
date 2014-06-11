@@ -6,12 +6,12 @@ require('includes/paypal.php');
 $paypal = new PayPal($config);
 
 $result = $paypal->call(array(
-  'method' => 'DoExpressCheckoutPayment',
+  'method'  => 'DoExpressCheckoutPayment',
   'paymentrequest_0_paymentaction' => 'sale',
-  'paymentrequest_0_amt' => '19.99',
-  'paymentrequest_0_currencycode' => 'USD',
-  'token' => $_GET['token'],
-  'payerid' => $_GET['PayerID'],
+  'paymentrequest_0_amt'  => '19.99',
+  'paymentrequest_0_currencycode'  => 'USD',
+  'token'  => $_GET['token'],
+  'payerid'  => $_GET['PayerID'],
 ));
 
 if ($result['PAYMENTINFO_0_PAYMENTSTATUS'] == 'Completed') {
@@ -19,5 +19,3 @@ if ($result['PAYMENTINFO_0_PAYMENTSTATUS'] == 'Completed') {
 } else {
   echo 'Handle payment execution failure';
 }
-
-
