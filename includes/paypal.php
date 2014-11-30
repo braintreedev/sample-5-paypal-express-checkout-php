@@ -9,8 +9,8 @@ class PayPal {
       "redirect"  => "https://www.sandbox.paypal.com/webscr",
     ),
     "live" => array(
-      "api"  => "https://api-3t.sandbox.paypal.com/nvp",
-      "redirect"  => "https://www.sandbox.paypal.com/webscr",
+      "api"  => "https://api-3t.paypal.com/nvp",
+      "redirect"  => "https://www.paypal.com/webscr",
     )
   );
 
