@@ -1,3 +1,5 @@
+<h2>This repo is on a path to being archived, checkout our other resources in github.com/paypal</h2>
+
 # Using the PayPal Express Checkout API in PHP to make a PayPal payment
 
 This is an example of the PayPal Express Checkout API using plain PHP to make a PayPal payment.
